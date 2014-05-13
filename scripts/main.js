@@ -17,7 +17,8 @@ $(document).ready(function(){
   $("#camp4_thumbs").slick({
     centerMode: true,
     centerPadding: "40px",
-    slidesToShow: 5,
+    infinite: true,
+    slidesToShow: 3,
     dots: false,
     arrows: false,
     onAfterChange: function(t, i) {
@@ -34,7 +35,10 @@ $(document).ready(function(){
 
   // Camp4 map is 640px wide
   var w = Math.min(640, $(window).width());
-  $("#camp4_map").mapster("resize", w)
+  $("#camp4_map").mapster("resize", w);
+  $("#camp4_thumbs").width(w);
+
+  // Start at a specific climb
   $("#camp4_thumbs").slickGoTo(6);
 
 
