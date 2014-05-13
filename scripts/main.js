@@ -17,8 +17,9 @@ $(document).ready(function(){
   $("#camp4_thumbs").slick({
     centerMode: true,
     centerPadding: "40px",
-    slidesToShow: 3,
-    dots: true,
+    slidesToShow: 5,
+    dots: false,
+    arrows: false,
     onAfterChange: function(t, i) {
       // user has moved carousel, update image map
       $("#camp4_map").mapster("set", true, i.toString());
@@ -31,6 +32,9 @@ $(document).ready(function(){
   });
   */
 
+  // Camp4 map is 640px wide
+  var w = Math.min(640, $(window).width());
+  $("#camp4_map").mapster("resize", w)
   $("#camp4_thumbs").slickGoTo(6);
 
 
