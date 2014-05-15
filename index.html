@@ -36,10 +36,6 @@
 
       <div id="thumbs_container">
         <div id="thumbs" class="slider" style="width: 640px;"></div>
-      <div>
-
-      <div id="table_container">
-        <!-- TODO -->
       </div>
 
     </div>  
@@ -57,8 +53,8 @@
 
         // Thumbnails for carousel
         str = "<div><div class='thumb'><img src='images/" + value.thumbnail + "'/>" + 
-              "<span>" + value.level + "</span>" +
-              "<span>" + value.name + "</span>" + 
+              "<span class='climblevel'>" + value.level + "</span>" +
+              "<span class='climbname'>" + value.name + "</span>" + 
               "</div></div>";
         $("#thumbs").append(str);
 

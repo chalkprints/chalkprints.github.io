@@ -1,3 +1,22 @@
+html { font-size: 62.5%; }
+body { font-size: 1em;}
+
+@media (max-width: 300px) {
+    html { font-size: 70%; }
+}
+
+@media (min-width: 500px) {
+    html { font-size: 80%; }
+}
+
+@media (min-width: 700px) {
+    html { font-size: 120%; }
+}
+
+@media (min-width: 1200px) {
+    html { font-size: 200%; }
+}
+
 .content {
   padding: 0px;
   background: #404040;
@@ -6,22 +25,31 @@
 }
 
 
+/* Image Map */
+#map {
 
-/* Carousel styles */
-.thumb {
-  margin: 10px;
-  padding: 2%;
-  position: relative;
-  text-align: center;
 }
+
+
+/* Carousel */
+
+.thumb {
+  position: relative;
+  margin: 10%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .thumb img {
   width: 100%;
-  color: blue;  
-  font-size: 36px;
 }
 
-.thumb p {
-  line-height: 20px;
-  color: black;  
-  font-size: 16px;
+.thumb .climblevel {
+  position: absolute;
+  left: 0px;
+  bottom: 20%;
+}
+
+.thumb .climbname {
 }
