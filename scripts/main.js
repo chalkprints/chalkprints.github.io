@@ -17,7 +17,7 @@ $(document).ready(function(){
 
   $("#thumbs").slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     speed: 100,
     dots: false,
