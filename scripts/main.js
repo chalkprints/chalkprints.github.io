@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $("#camp4_map").mapster({
+  $("#map").mapster({
     singleSelect: true,
     mapKey: "data-key",
     stroke: true,
@@ -9,12 +9,13 @@ $(document).ready(function(){
     fillOpacity: 0.5,
     onClick: function(e) {
       // user has clicked on an area on the image map, update carousel
-      $("#camp4_thumbs").slickGoTo(e.key);
+      $("#thumbs").slickGoTo(e.key);
     }
   });
 
 
-  $("#camp4_thumbs").slick({
+
+  $("#thumbs").slick({
     centerMode: true,
     centerPadding: "40px",
     infinite: true,
@@ -23,7 +24,7 @@ $(document).ready(function(){
     arrows: false,
     onAfterChange: function(t, i) {
       // user has moved carousel, update image map
-      $("#camp4_map").mapster("set", true, i.toString());
+      $("#map").mapster("set", true, i.toString());
     }
   });
 
@@ -35,11 +36,11 @@ $(document).ready(function(){
 
   // Camp4 map is 640px wide
   var w = Math.min(640, $(window).width());
-  $("#camp4_map").mapster("resize", w);
-  $("#camp4_thumbs").width(w);
+  $("#map").mapster("resize", w);
+  $("#thumbs").width(w);
 
   // Start at a specific climb
-  $("#camp4_thumbs").slickGoTo(6);
+  $("#thumbs").slickGoTo(6);
 
 
 });

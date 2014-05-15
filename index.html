@@ -29,80 +29,42 @@
 
     <div class="content">
 
-      <img id="camp4_map" src="images/map.png" width="640" height="615" usemap="#camp4_map">
+      <div id="map_container">
+        <img id="map" src="images/map.png" width="640" height="615" usemap="#map">
+        <map name="map" id="imgmap"></map>
+      </div>
 
-      <map name="camp4_map">
-        <area data-key="1" href="#" shape="circle" coords="34,297,25"  >
-        <area data-key="2" href="#" shape="circle" coords="155,305,30" >
-        <area data-key="3" href="#" shape="circle" coords="242,302,25" >
-        <area data-key="4" href="#" shape="circle" coords="253,337,20" >
-        <area data-key="5" href="#" shape="circle" coords="283,377,30" >
-        <area data-key="6" href="#" shape="circle" coords="311,307,25" >
-        <area data-key="7" href="#" shape="circle" coords="314,260,25" >
-        <area data-key="8" href="#" shape="circle" coords="354,207,25" >
-        <area data-key="9" href="#" shape="circle" coords="388,316,20" >
-        <area data-key="10" href="#" shape="circle" coords="408,266,25" >
-        <area data-key="11" href="#" shape="circle" coords="504,288,25" >
-        <area data-key="12" href="#" shape="circle" coords="545,235,25" >
-        <area data-key="13" href="#" shape="circle" coords="578,338,30" >
-      </map>
+      <div id="thumbs_container">
+        <div id="thumbs" class="slider" style="width: 640px;"></div>
+      <div>
 
-      <div id="camp4_thumbs" class="slider" style="width: 640px; background: grey; color: white;">
-        <div><div class="thumb">
-          <img src="images/thumb1.png"/>
-          <p>Climb 1</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb2.png"/>
-          <p>Climb 2</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb3.png"/>
-          <p>Climb 3</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb4.png"/>
-          <p>Climb 4</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb5.png"/>
-          <p>Climb 5</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb6.png"/>
-          <p>Climb 6</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb7.png"/>
-          <p>Climb 7</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb8.png"/>
-          <p>Climb 8</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb9.png"/>
-          <p>Climb 9</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb10.png"/>
-          <p>Climb 10</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb11.png"/>
-          <p>Climb 11</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb12.png"/>
-          <p>Climb 12</p>
-        </div></div>
-        <div><div class="thumb">
-          <img src="images/thumb13.png"/>
-          <p>Climb 13</p>
-        </div></div>
+      <div id="table_container">
+        <!-- TODO -->
       </div>
 
     </div>  
+
+    <!-- DATA to populate -->
+    <script type="text/javascript">
+      var data = [{"id":0,"name":"Battle Of The Bulge","level":"v6","coords":"34,297,20","areagroup":"a","thumbnail":"BattleofTheBulge.png","video":""},{"id":1,"name":"The Titanic","level":"v5","coords":"34,297,20","areagroup":"a","thumbnail":"TheTitanic.png","video":""},{"id":2,"name":"Tendons Give","level":"v4","coords":"155,305,30","areagroup":"","thumbnail":"TendonsGive.png","video":""},{"id":3,"name":"Father Of The Egg","level":"v6","coords":"230,302,20","areagroup":"b","thumbnail":"FaderOfTheEgg.png","video":""},{"id":4,"name":"Initial Friction","level":"v4","coords":"250,310,20","areagroup":"b","thumbnail":"InitialFriction.png","video":""},{"id":5,"name":"Cocaine Corner","level":"v4","coords":"250,290,20","areagroup":"b","thumbnail":"CocaineCorner.png","video":""},{"id":6,"name":"The Marco Traverse","level":"v4","coords":"253,337,20","areagroup":"","thumbnail":"TheMarcoTraverse.png","video":""},{"id":7,"name":"Bates Problem","level":"v6","coords":"273,367,20","areagroup":"c","thumbnail":"BatesProblem.png","video":""},{"id":8,"name":"Midnight Lighting","level":"v8","coords":"293,387,20","areagroup":"c","thumbnail":"MidnightLighting.png","video":""},{"id":9,"name":"Robbins Problem","level":"v6","coords":"293,367,20","areagroup":"c","thumbnail":"RobbinsProblem.png","video":""},{"id":10,"name":"Ver's Werner","level":"v4","coords":"315,315,20","areagroup":"d","thumbnail":"VersWerner.png","video":""},{"id":11,"name":"Blue Suede Shoes","level":"v4","coords":"315,295,20","areagroup":"d","thumbnail":"BlueShoes.png","video":""},{"id":12,"name":"Shiver Me Timbers","level":"v4","coords":"314,260,25","areagroup":"","thumbnail":"ShiverMeTimbers.png","video":""},{"id":13,"name":"Bruce Lee","level":"v8","coords":"354,207,25","areagroup":"","thumbnail":"BruceLee.png","video":""},{"id":14,"name":"Ament Arete","level":"v6","coords":"388,316,20","areagroup":"","thumbnail":"AmentArete.png","video":""},{"id":15,"name":"King Cobra","level":"v8","coords":"408,266,25","areagroup":"","thumbnail":"KingCobra.png","video":""},{"id":16,"name":"Bachar Cracker","level":"v4","coords":"504,288,25","areagroup":"","thumbnail":"BacharCracker.png","video":""},{"id":17,"name":"Dynamo","level":"v5","coords":"545,235,25","areagroup":"","thumbnail":"Dynamo.png","video":""},{"id":18,"name":"The Force","level":"v10","coords":"578,338,30","areagroup":"","thumbnail":"TheForce.png","video":""}];
+
+      $.each(data, function(index, value) {
+        var str = "";
+
+        // Areas for image map
+        str = "<area data-key='" + value.id + "' href='#' shape='circle' coords='" + value.coords + "'>";
+        $("#imgmap").append(str);
+
+        // Thumbnails for carousel
+        str = "<div><div class='thumb'><img src='images/" + value.thumbnail + "'/>" + 
+              "<span>" + value.level + "</span>" +
+              "<span>" + value.name + "</span>" + 
+              "</div></div>";
+        $("#thumbs").append(str);
+
+      });
+
+    </script>
 
     <script src="scripts/main.js"></script>
   </body>
