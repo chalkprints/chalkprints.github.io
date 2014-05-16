@@ -42,17 +42,19 @@ html {
 /* Carousel */
 .thumb {
   position: relative;
-  margin: 10%;
+  margin: 5%;
+  padding: 5%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
+  background-color: grey;
 }
 .thumb img {
   width: 100%;
 }
 .thumb .climblevel {
   position: absolute;
-  left: 0px;
+  left: 10%;
   bottom: 20%;
 }
 .thumb .climbname {
