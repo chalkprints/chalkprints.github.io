@@ -29,11 +29,10 @@ $(document).ready(function(){
     }
   });
 
-  /*
-  $("#camp4_thumbs").click(function(){
+  $("#thumbs").click(function(){
     console.log($(this).index());
   });
-  */
+  
 
   // Responsive => set the width of the containers
   // Camp4 map is 640px wide

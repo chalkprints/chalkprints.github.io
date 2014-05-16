@@ -23,14 +23,18 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Text header etc
-    <h1>Camp4 by Chalkprints.</h1>
-    -->
+    <div class="header">
+      <!-- TODO
+        Make it 2 images, with links and style responsively
+        <img id="banner" src="images/banner.png" alt="Camp4 - Classic Bouldering - Yosemite National Park, CA">
+        <img id="logo" src="images/logo.png" alt="Chalkprints">
+      -->
+    </div>
 
     <div class="content">
 
       <div id="map_container">
-        <img id="map" src="images/map.png" width="640" height="615" usemap="#map">
+        <img id="map" src="images/map.png" width="640" height="460" usemap="#map">
         <map name="map" id="imgmap"></map>
       </div>
 
@@ -42,7 +46,8 @@
 
     <!-- DATA to populate -->
     <script type="text/javascript">
-      var data = [{"id":0,"name":"Battle Of The Bulge","level":"v6","coords":"34,297,20","areagroup":"a","thumbnail":"BattleofTheBulge.png","video":""},{"id":1,"name":"The Titanic","level":"v5","coords":"34,297,20","areagroup":"a","thumbnail":"TheTitanic.png","video":""},{"id":2,"name":"Tendons Give","level":"v4","coords":"155,305,30","areagroup":"","thumbnail":"TendonsGive.png","video":""},{"id":3,"name":"Father Of The Egg","level":"v6","coords":"230,302,20","areagroup":"b","thumbnail":"FaderOfTheEgg.png","video":""},{"id":4,"name":"Initial Friction","level":"v4","coords":"250,310,20","areagroup":"b","thumbnail":"InitialFriction.png","video":""},{"id":5,"name":"Cocaine Corner","level":"v4","coords":"250,290,20","areagroup":"b","thumbnail":"CocaineCorner.png","video":""},{"id":6,"name":"The Marco Traverse","level":"v4","coords":"253,337,20","areagroup":"","thumbnail":"TheMarcoTraverse.png","video":""},{"id":7,"name":"Bates Problem","level":"v6","coords":"273,367,20","areagroup":"c","thumbnail":"BatesProblem.png","video":""},{"id":8,"name":"Midnight Lighting","level":"v8","coords":"293,387,20","areagroup":"c","thumbnail":"MidnightLighting.png","video":""},{"id":9,"name":"Robbins Problem","level":"v6","coords":"293,367,20","areagroup":"c","thumbnail":"RobbinsProblem.png","video":""},{"id":10,"name":"Ver's Werner","level":"v4","coords":"315,315,20","areagroup":"d","thumbnail":"VersWerner.png","video":""},{"id":11,"name":"Blue Suede Shoes","level":"v4","coords":"315,295,20","areagroup":"d","thumbnail":"BlueShoes.png","video":""},{"id":12,"name":"Shiver Me Timbers","level":"v4","coords":"314,260,25","areagroup":"","thumbnail":"ShiverMeTimbers.png","video":""},{"id":13,"name":"Bruce Lee","level":"v8","coords":"354,207,25","areagroup":"","thumbnail":"BruceLee.png","video":""},{"id":14,"name":"Ament Arete","level":"v6","coords":"388,316,20","areagroup":"","thumbnail":"AmentArete.png","video":""},{"id":15,"name":"King Cobra","level":"v8","coords":"408,266,25","areagroup":"","thumbnail":"KingCobra.png","video":""},{"id":16,"name":"Bachar Cracker","level":"v4","coords":"504,288,25","areagroup":"","thumbnail":"BacharCracker.png","video":""},{"id":17,"name":"Dynamo","level":"v5","coords":"545,235,25","areagroup":"","thumbnail":"Dynamo.png","video":""},{"id":18,"name":"The Force","level":"v10","coords":"578,338,30","areagroup":"","thumbnail":"TheForce.png","video":""}];
+      var data = [{"id":0,"name":"Battle Of The Bulge","level":"v6","coords":"34,127,20","areagroup":"a","thumbnail":"BattleofTheBulge.png","video":""},{"id":1,"name":"The Titanic","level":"v5","coords":"34,127,20","areagroup":"a","thumbnail":"TheTitanic.png","video":""},{"id":2,"name":"Tendons Give","level":"v4","coords":"155,135,30","areagroup":"","thumbnail":"TendonsGive.png","video":""},{"id":3,"name":"Father Of The Egg","level":"v6","coords":"230,132,20","areagroup":"b","thumbnail":"FaderOfTheEgg.png","video":""},{"id":4,"name":"Initial Friction","level":"v4","coords":"250,140,20","areagroup":"b","thumbnail":"InitialFriction.png","video":""},{"id":5,"name":"Cocaine Corner","level":"v4","coords":"250,120,20","areagroup":"b","thumbnail":"CocaineCorner.png","video":""},{"id":6,"name":"The Marco Traverse","level":"v4","coords":"253,167,20","areagroup":"","thumbnail":"TheMarcoTraverse.png","video":""},{"id":7,"name":"Bates Problem","level":"v6","coords":"273,197,20","areagroup":"c","thumbnail":"BatesProblem.png","video":""},{"id":8,"name":"Midnight Lighting","level":"v8","coords":"293,217,20","areagroup":"c","thumbnail":"MidnightLighting.png","video":""},{"id":9,"name":"Robbins Problem","level":"v6","coords":"293,197,20","areagroup":"c","thumbnail":"RobbinsProblem.png","video":""},{"id":10,"name":"Ver's Werner","level":"v4","coords":"315,145,20","areagroup":"d","thumbnail":"VersWerner.png","video":""},{"id":11,"name":"Blue Suede Shoes","level":"v4","coords":"315,125,20","areagroup":"d","thumbnail":"BlueShoes.png","video":""},{"id":12,"name":"Shiver Me Timbers","level":"v4","coords":"314,90,25","areagroup":"","thumbnail":"ShiverMeTimbers.png","video":""},{"id":13,"name":"Bruce Lee","level":"v8","coords":"354,37,25","areagroup":"","thumbnail":"BruceLee.png","video":""},{"id":14,"name":"Ament Arete","level":"v6","coords":"388,146,20","areagroup":"","thumbnail":"AmentArete.png","video":""},{"id":15,"name":"King Cobra","level":"v8","coords":"408,96,25","areagroup":"","thumbnail":"KingCobra.png","video":""},{"id":16,"name":"Bachar Cracker","level":"v4","coords":"504,118,25","areagroup":"","thumbnail":"BacharCracker.png","video":""},{"id":17,"name":"Dynamo","level":"v5","coords":"545,65,25","areagroup":"","thumbnail":"Dynamo.png","video":""},{"id":18,"name":"The Force","level":"v10","coords":"578,168,30","areagroup":"","thumbnail":"TheForce.png","video":""}];
+
 
       $.each(data, function(index, value) {
         var str = "";
