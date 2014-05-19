@@ -31,3 +31,14 @@ var sizeGoldens = function() {
     });
 };
 
+$.fn.isOnScreen = function() {
+    var win = $(window);
+    
+    var viewport = { left : win.scrollLeft() };
+    viewport.right = viewport.left + win.width();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+
+    return (!(viewport.left > bounds.left || viewport.right < bounds.right))
+};
