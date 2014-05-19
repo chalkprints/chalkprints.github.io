@@ -252,6 +252,9 @@
         $(".map img").on("mouseenter", function(e) {
             $(".map .marker").fadeOut(500);
         });
+
+        // Highlight the first climb
+        $(".thumbcontainer td:nth-child(1)").mouseenter();
     });
     
     // size map container so map doesn't go behind the transparent thumbnails ever
