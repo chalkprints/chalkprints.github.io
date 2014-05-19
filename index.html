@@ -243,8 +243,10 @@
             // name and position the map pointer
             $(".map .marker label").text(problemName);
             $(".map .marker").css({ top : yPos, left : xPos });
-            $(".map .marker").fadeIn(250);      
-                
+            $(".map .marker").fadeIn(250);
+
+            // if thumbnail not visible, scroll to it
+            if (!$elt.isOnScreen()) $(".thumbs").scrollTo($elt, 500);       
         })
         
         $(".map img").on("mouseenter", function(e) {
@@ -256,6 +258,18 @@
     var sizeContent = function() {
         bh = $("body").height();
         $(".content").css({ height : bh - 180 });
+    };
+
+    $.fn.isOnScreen = function() {
+        var win = $(window);
+        
+        var viewport = { left : win.scrollLeft() };
+        viewport.right = viewport.left + win.width();
+    
+        var bounds = this.offset();
+        bounds.right = bounds.left + this.outerWidth();
+    
+        return (!(viewport.left > bounds.left || viewport.right < bounds.right))
     };
 
 </script>
