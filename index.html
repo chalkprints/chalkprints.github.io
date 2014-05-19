@@ -222,6 +222,9 @@
                 // find the thumb with the same data ID
                 $targetthumb = $($(".thumbcontainer").find("[data-problem-id='" + matchId + "']")[0]);
                 
+                // if thumbnail not visible, scroll to it
+                if (!$targetthumb.isOnScreen()) $(".thumbs").scrollTo($targetthumb, 500);       
+ 
                 // force event action
                 $targetthumb.trigger("mouseenter");
                 
@@ -244,9 +247,6 @@
             $(".map .marker label").text(problemName);
             $(".map .marker").css({ top : yPos, left : xPos });
             $(".map .marker").fadeIn(250);
-
-            // if thumbnail not visible, scroll to it
-            if (!$elt.isOnScreen()) $(".thumbs").scrollTo($elt, 500);       
         })
         
         $(".map img").on("mouseenter", function(e) {
