@@ -1,0 +1,163 @@
+/* Site CSS */
+/* Author: Arvind */
+/* License: FoSho */
+
+/*
+main top containers
+================================================== */
+
+body {
+	height: 100%; overflow: hidden;
+	background: rgb(44,42,40) url(../images/texture.png);
+	background-size: 300px 300px;
+	font-family: "Open Sans", OpenSans, sans-serif !important;
+}
+
+.fullmaskback { 
+	background-image: url(../images/valley.jpg); 
+	background-size: cover; 
+	background-position: 80% 0; 
+	opacity: 0.1; 
+}
+
+.content { overflow: hidden; z-index: 1; }
+
+.banner { line-height: 3rem; }
+	.banner p { line-height: 1rem; }
+
+.logo { 
+	width: 100px; height: 100px;
+	background: transparent url(../images/logo-small.png) no-repeat 30px 30px; 
+	background-size: 50px auto;
+	opacity: 0.5;
+	cursor: pointer;
+}
+	.logo:hover { opacity: 1; }
+	.logo h1 { display: none; }
+
+
+
+/* 
+MAP and all it's responsive 
+adjustments so it always fits beautifully
+=========================================== */
+.map {
+	position: relative; left: 0; right: 0; top: 0; bottom: 0;
+	margin: 0 auto; margin-top: -40px; width: 75%;
+	min-width: 320px; max-width: 780px;
+}
+	/* Desktop Landscape Size ULTRA Wide (screens and browsers) */
+	@media only screen and (min-width: 1440px) {
+		.map {
+			margin: 0 auto; margin-top: -130px; width: 60%;
+			max-width: 1020px;
+		}
+	}
+	/* Desktop Landscape Size Wide (screens and browsers) */
+	@media only screen and (min-width: 1020px) and (max-width: 1439px) {
+		.map {
+			margin: 0 auto; margin-top: -80px; width: 85%;
+			max-width: 780px;
+		}
+	}
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.map {
+			margin: 0 auto; margin-top: -20px; width: 100%;
+			min-width: 480px; max-width: 720px;
+		}
+	}
+	/* Mobile Portrait Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.map {
+			margin: 0; width: 100%; margin-top: 20px;
+		}
+	}
+
+	.map .targetmarker {
+		position: absolute; width: 34px; height: 34px;
+		border: 1px solid transparent;
+		border-radius: 17px; -moz-border-radius: 17px;
+		cursor: pointer;
+		z-index: 8;
+	}
+		.map .targetmarker:after {
+			content: " ";
+			position: absolute; width: 8px; height: 8px; top: 11px; left: 11px;
+			border: 1px solid rgba(0,0,0,0.75);
+			border-radius: 5px; -moz-border-radius: 5px;
+			background-color: rgb(255,255,255);
+		}
+		.map .targetmarker:hover {
+			background-color: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.25);
+			z-index: 9;
+		}
+
+	.map .marker {
+		display: none; 
+		position: absolute; width: 34px; height: 34px;
+		background: transparent url(../images/marker.png) no-repeat; background-size: 34px 34px;
+		overflow: visible;
+		cursor: pointer;
+		z-index: 10;
+	}
+		.map .marker label {
+			display: block; position: absolute; left: 34px; top: 0; height: 34px; padding: 0 5px;
+			white-space: nowrap; overflow: visible;
+			background-color: rgba(6,3,2,0.25); border-radius: 3px; -moz-border-radius: 3px;
+			font-size: 1.5rem; line-height: 3.4rem;
+			font-weight: 800; color: rgba(255,255,255,1);
+			text-shadow: 0 0 0 transparent, 0 1px 4px rgba(0,0,0,0.75);
+		}
+
+
+/* 
+bottom THUMBS
+full width, fixed to bottom, horizontal scroll
+================================================ */
+
+.thumbs { 
+	bottom: 0; height: 180px; 
+	background-color: rgba(0,0,0,0.1);
+	overflow: hidden;
+	overflow-x: auto;
+	z-index: 2;
+}
+	.thumbs:hover {
+		background-color: rgba(0,0,0,0.25);
+	}
+	
+	.thumbcontainer table { table-layout: fixed; border-spacing: 0.5rem; border-collapse: separate; }
+		.thumbcontainer table col { width: 140px; }
+			.thumbcontainer td { overflow: hidden; }
+	
+	.thumbcontainer .thumb {
+		padding: 10px;
+		height: 170px; min-width: 140px;
+		border-radius: 3px; -moz-border-radius: 3px;
+		background-color: rgba(255,255,255,0.1);
+		border: 1px solid rgba(255,255,255,0.1);
+		opacity: 0.75;
+		cursor: pointer;
+		-webkit-backface-visibility: hidden;
+   		-webkit-transform: translateZ(0) scale(1.0, 1.0);
+	}
+		.thumbcontainer .thumb:hover { 
+			background-color: rgba(255,255,255,0.2);
+			opacity: 1; 
+		}
+		
+			.thumbcontainer .thumb label { 
+				padding: 4px 0 10px 0; max-width: 120px; 
+				font-size: 1.2rem; color: rgb(255,255,255);
+				overflow: hidden; white-space: nowrap; text-overflow: ellipsis; 
+			}
+			.thumbcontainer .thumb img { width: 120px; height: 120px; border-radius: 2px; -moz-border-radius: 2px; }
+			.thumbcontainer .thumb span { 
+				left: 10px; top: 36px; 
+				background-color: rgba(250,250,250,0.65); 
+				text-transform: uppercase; font-weight: 800; color: rgba(6,3,2,1); font-size: 1.8rem;
+				text-shadow: 0 0 0 transparent, 0 1px 1px rgb(255,255,255);
+			}
+			
+			

@@ -1,0 +1,208 @@
+/*
+* Monkeygrid is the best lightweight grid system in the universe
+* MONKEY GRID IS % BASED
+* and uses rem for sizes
+* Author: Arvind Thyagarajan
+* Copyright: 2014
+*/
+
+/* Use the class "testgrid" on BODY to visualize the grid */
+.testgrid .column,
+.testgrid .columns 								{ min-height: 3rem; box-shadow: inset 0 0 0 1px rgba(220,110,100,.5); }
+.testgrid .wrapper::before						{ content: ""; display: block; position: absolute; z-index: -1; width: 100%; height: 100%;
+												  background: transparent url(../images/grid.png); background-size: 100% 1px; }
+
+/* #Base Grid
+================================================== */
+
+    .container                                  { position: relative; width: 100%; margin: 0; padding: 0; }
+	.container.centered							{ max-width: 96rem; margin: 0 auto; }
+    .container .column,
+    .container .columns                         { display: block; position: relative; float: left; }
+    
+	.row                                        { position: relative; width: 100%; }
+	.row:before,
+	.row:after 									{ content: " "; display: table; }
+	.row:after 									{ clear: both; }
+	
+    /* Base Grid */
+	.container .column,
+    .container .one.column,
+    .container .one.columns                     { width: 6.25%; }
+    .container .two.columns                     { width: 12.5%; }
+    .container .three.columns                   { width: 18.75%; }
+    .container .four.columns                    { width: 25%; }
+    .container .five.columns                    { width: 31.25%; }
+    .container .six.columns                     { width: 37.5%; }
+    .container .seven.columns                   { width: 43.75%; }
+    .container .eight.columns                   { width: 50%; }
+    .container .nine.columns                    { width: 56.25%; }
+    .container .ten.columns                     { width: 62.5%; }
+    .container .eleven.columns                  { width: 68.75%; }
+    .container .twelve.columns                  { width: 75%; }
+    .container .thirteen.columns                { width: 81.25%; }
+    .container .fourteen.columns                { width: 87.5%; }
+    .container .fifteen.columns                 { width: 93.75%; }
+    .container .sixteen.columns                 { width: 100%; }
+
+    .container .one-third.column                { width: 33.33%; }
+    .container .two-thirds.column               { width: 66.66%; }
+    .container .one-fifth.column                { width: 20%; }
+
+	.container .column.large					{ width: 61%; }
+	.container .column.small					{ width: 39%; }
+	
+	/* Approximation of Golden Ratios */
+	.row.goldenbox									{  }
+	
+	.container .goldenbox > .column.large			{ width: 61%; }
+	.container .goldenbox > .column.small			{ width: 39%; }
+	.container .goldenbox.vertical > .column.large	{ width: 100%; height: 61%; }
+	.container .goldenbox.vertical > .column.small	{ width: 100%; height: 39%; }
+	
+	.container .row.goldenbox > .column,
+	.container .row.goldenbox > .column > .row.goldenbox { height: 100%; }
+	
+
+/* #Tablet
+================================================== */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+		.container .column,
+		.container .one.column,
+		.container .one.columns,
+		.container .two.columns,
+		.container .three.columns,
+		.container .four.columns,
+		.container .five.columns,
+		.container .six.columns,
+		.container .seven.columns,
+		.container .eight.columns                   { width: 50%; }
+		
+		.container .nine.columns,
+		.container .ten.columns,
+		.container .eleven.columns,
+		.container .twelve.columns,
+		.container .thirteen.columns,
+		.container .fourteen.columns,
+		.container .fifteen.columns,
+		.container .sixteen.columns                 { width: 100%; }
+
+		.container .one-third.column,
+		.container .one-fifth.column                { width: 50%; }
+		.container .two-thirds.column               { width: 100%; }
+    }
+
+
+/*  #AllMobile
+
+* The simplifying premise of monkeygrid is that
+* you will never need anything but a single column
+* in mobile phone factors. Cool?
+================================================== */
+
+    @media only screen and (max-width: 767px) {
+		.container .column,
+		.container .one.column,
+		.container .one.columns,
+		.container .two.columns,
+		.container .three.columns,
+		.container .four.columns,
+		.container .five.columns,
+		.container .six.columns,
+		.container .seven.columns,
+		.container .eight.columns                   { width: 50%; }
+		
+		.container .nine.columns,
+		.container .ten.columns,
+		.container .eleven.columns,
+		.container .twelve.columns,
+		.container .thirteen.columns,
+		.container .fourteen.columns,
+		.container .fifteen.columns,
+		.container .sixteen.columns                 { width: 100%; }
+
+		.container .one-third.column,
+		.container .one-fifth.column                { width: 50%; }
+		.container .two-thirds.column               { width: 100%; }
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+		.container .column,
+		.container .one.column,
+		.container .one.columns,
+		.container .two.columns,
+		.container .three.columns,
+		.container .four.columns,
+		.container .five.columns,
+		.container .six.columns,
+		.container .seven.columns,
+		.container .eight.columns,
+		.container .nine.columns,
+		.container .ten.columns,
+		.container .eleven.columns,
+		.container .twelve.columns,
+		.container .thirteen.columns,
+		.container .fourteen.columns,
+		.container .fifteen.columns,
+		.container .sixteen.columns,
+		.container .one-third.column,
+		.container .one-fifth.column,
+		.container .two-thirds.column               { width: 100%; }
+
+		.container .column.large					{ width: 100%; }
+		.container .column.small					{ width: 100%; }
+
+		/* Golden Ratios */
+		.row.goldenbox									{ height: auto !important; }
+		
+		.container .goldenbox > .column.large			{ width: 100% !important; }
+		.container .goldenbox > .column.small			{ width: 100% !important; }
+		.container .goldenbox.vertical > .column.large	{ width: 100%; height: auto !important; }
+		.container .goldenbox.vertical > .column.small	{ width: 100%; height: auto !important; }
+		
+		.container .row.goldenbox > .column,
+		.container .row.goldenbox > .column > .row.goldenbox { height: auto; }
+    }
+
+/* #Mobile (Portrait)
+================================================== */
+	@media only screen and (max-width: 479px) {
+		.container .column,
+		.container .one.column,
+		.container .one.columns,
+		.container .two.columns,
+		.container .three.columns,
+		.container .four.columns,
+		.container .five.columns,
+		.container .six.columns,
+		.container .seven.columns,
+		.container .eight.columns,
+		.container .nine.columns,
+		.container .ten.columns,
+		.container .eleven.columns,
+		.container .twelve.columns,
+		.container .thirteen.columns,
+		.container .fourteen.columns,
+		.container .fifteen.columns,
+		.container .sixteen.columns,
+		.container .one-third.column,
+		.container .one-fifth.column,
+		.container .two-thirds.column               { width: 100%; }
+
+		.container .column.large					{ width: 100%; }
+		.container .column.small					{ width: 100%; }
+		
+		/* Golden Ratios */
+		.row.goldenbox									{ height: auto !important; }
+		
+		.container .goldenbox > .column.large			{ width: 100% !important; }
+		.container .goldenbox > .column.small			{ width: 100% !important; }
+		.container .goldenbox.vertical > .column.large	{ width: 100%; height: auto !important; }
+		.container .goldenbox.vertical > .column.small	{ width: 100%; height: auto !important; }
+		
+		.container .row.goldenbox > .column,
+		.container .row.goldenbox > .column > .row.goldenbox { height: auto; }
+	}
