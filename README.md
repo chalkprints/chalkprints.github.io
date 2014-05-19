@@ -1,4 +1,8 @@
-camp4
-=====
+# Yosemite Camp 4 Bouldering Video Guide
 
-Yosemite Camp 4 climbing map
+## TODO
+
+1. Google Webmaster tools to get all the SEO 101 stuff down
+
+2. Videos
+
