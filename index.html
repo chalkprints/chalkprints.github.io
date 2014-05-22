@@ -275,8 +275,9 @@
             $(".thumbcontainer .thumb .selected").remove();
         });
 
-        // Highlight the first climb
+        // Initialize by highlighting the first climb
         $(".thumbcontainer td:nth-child(1)").mouseenter();
+        sizeContent();
     });
     
     // size map container so map doesn't go behind the transparent thumbnails ever
