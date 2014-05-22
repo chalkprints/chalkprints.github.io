@@ -238,7 +238,9 @@
                 // if thumbnail not visible, scroll to it
                 if (!$targetthumb.isOnScreen()) $(".thumbs").scrollTo($targetthumb, 500);       
  
-                // force event action
+                // simulate a hover, plus force event action
+                $(".thumbcontainer .thumb").removeClass("thumbhover");
+                $targetthumb.addClass("thumbhover");
                 $targetthumb.trigger("mouseenter");
                 
             });
@@ -260,10 +262,17 @@
             $(".map .marker label").text(problemName);
             $(".map .marker").css({ top : yPos, left : xPos });
             $(".map .marker").fadeIn(250);
-        })
+
+            // add play button and activate video link
+            $(".thumbcontainer .thumb .selected").remove();
+            $elt.append("<p class='selected'></p>");
+        });
         
+        // deactivative any selected marker or thumb
         $(".map img").on("mouseenter", function(e) {
             $(".map .marker").fadeOut(500);
+            $(".thumbcontainer .thumb").removeClass("thumbhover");
+            $(".thumbcontainer .thumb .selected").remove();
         });
 
         // Highlight the first climb
