@@ -143,7 +143,7 @@ full width, fixed to bottom, horizontal scroll
 		-webkit-backface-visibility: hidden;
    	-webkit-transform: translateZ(0) scale(1.0, 1.0);
 	}
-		.thumbcontainer .thumb:hover, .thumbcontainer .thumbhover { 
+		.thumbcontainer .thumbhover { 
 			background-color: rgba(255,255,255,0.2);
 			opacity: 1; 
 		}
