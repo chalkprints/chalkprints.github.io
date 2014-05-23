@@ -403,13 +403,6 @@
 		$(".logo").on("click", closeVideo);
 		$(".map").on("click", closeVideo);
 		
-        // deactivative any selected marker or thumb
-        $(".map img").on("mouseenter", function(e) {
-            $(".map .marker").fadeOut(500);
-            $(".thumbcontainer .thumb").removeClass("thumbhover");
-            $(".thumbcontainer .thumb .selected").remove();
-        });
-
         // Highlight climb, based on URL
         var climb = window.location.hash.substring(1);
         if (climb == "") {
