@@ -50,7 +50,7 @@ adjustments so it always fits beautifully
 	/* Desktop Landscape Size ULTRA Wide (screens and browsers) */
 	@media only screen and (min-width: 1440px) {
 		.map {
-			margin: 0 auto; margin-top: -130px; width: 60%;
+			margin: 0 auto; margin-top: -85px; width: 60%;
 			max-width: 1020px;
 		}
 	}
@@ -128,13 +128,17 @@ full width, fixed to bottom, horizontal scroll
 		background-color: rgba(0,0,0,0.25);
 	}
 	
-	.thumbcontainer table { table-layout: fixed; border-spacing: 0.5rem; border-collapse: separate; }
+	.thumbs > .row,
+	.thumbs > .row > .columns { height: 100%; }
+	
+	.thumbcontainer { height: 100%; }
+	.thumbcontainer table { table-layout: fixed; height: 100%; border-spacing: 0.5rem; border-collapse: separate; }
 		.thumbcontainer table col { width: 140px; }
 			.thumbcontainer td { overflow: hidden; }
 	
 	.thumbcontainer .thumb {
 		padding: 10px;
-		height: 170px; min-width: 140px;
+		height: 100%; min-width: 140px;
 		border-radius: 3px; -moz-border-radius: 3px;
 		background-color: rgba(255,255,255,0.1);
 		border: 1px solid rgba(255,255,255,0.1);
@@ -153,26 +157,25 @@ full width, fixed to bottom, horizontal scroll
 				font-size: 1.2rem; color: rgb(255,255,255);
 				overflow: hidden; white-space: nowrap; text-overflow: ellipsis; 
 			}
-			.thumbcontainer .thumb img { 
-				width: 120px; height: 120px; 
-				border-radius: 2px; -moz-border-radius: 2px; 
+			.thumbcontainer .thumb .image {
+				position: absolute; top: 40px; bottom: 10px; left: 10px; right: 10px; margin: 0;
+				overflow: hidden;
 			}
-			.thumbcontainer .thumb span { 
-				top: 36px; 
-				background-color: rgba(250,250,250,0.65); 
-				text-transform: uppercase; font-weight: 800; color: rgba(6,3,2,1); font-size: 1.8rem;
-				text-shadow: 0 0 0 transparent, 0 1px 1px rgb(255,255,255);
-			}
-			@-moz-document url-prefix() { 
-				.thumbcontainer .thumb span { 
-					top: 42px; 
+				.thumbcontainer .thumb img { 
+					width: 100%; height: 100%; 
+					border-radius: 2px; -moz-border-radius: 2px;
 				}
-			}
+				.thumbcontainer .thumb span { 
+					top: 0px; height: 100%; max-height: 30px;
+					background-color: rgba(250,250,250,0.65); 
+					text-transform: uppercase; font-weight: 800; color: rgba(6,3,2,1); font-size: 1.8rem;
+					text-shadow: 0 0 0 transparent, 0 1px 1px rgb(255,255,255);
+				}
 
 			.thumbcontainer .thumb .playbtn {
 				position: absolute; display: none;
-				width: 120px; height: 120px; 
-				top: 35px; left: 10px;
+				width: 100%; height: 100%; 
+				top: 0px; left: 0px;
 				background: transparent url(../images/play_button.png) center center no-repeat;
 				z-index: 2;
 			}
@@ -184,10 +187,10 @@ Video Iframe
 .videowrap {
 	display: none;
 	position: fixed;
-	height: auto; max-height: 560px;
+	height: auto; max-height: 540px;
 	bottom: 180px;
-	border-top: 40px solid rgba(0,0,0,0.1);
-	border-bottom: 40px solid rgba(0,0,0,0.1);
+	border-top: 40px solid rgba(0,0,0,0.5);
+	border-bottom: 20px solid rgba(0,0,0,0.5);
 	background-color: rgba(0,0,0,0.75);
 	z-index: 21;
 	overflow: visible;
