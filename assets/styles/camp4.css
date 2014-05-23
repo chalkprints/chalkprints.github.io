@@ -193,7 +193,7 @@ Video Iframe
 	bottom: 180px;
 	border-top: 40px solid rgba(0,0,0,0.5);
 	border-bottom: 20px solid rgba(0,0,0,0.5);
-	background-color: rgba(0,0,0,0.75);
+	background-color: rgba(0,0,0,0.9);
 	z-index: 21;
 	overflow: visible;
 }
@@ -215,7 +215,7 @@ Video Iframe
 	}
 		
 	.videowrap .close {
-		position: absolute; top: -40px; right: 30px;
+		position: absolute; top: -40px; right: 20px;
 		width: 40px; height: 40px;
 		text-align: center; line-height: 4rem;
 		font-size: 3rem; color: rgb(255,255,255); font-weight: 400;
