@@ -297,13 +297,12 @@
                 $(".thumbcontainer .thumb .selected").remove();
                 $elt.append("<p class='selected'></p>");
 
-                var vimeo = $elt.find("a").attr("href"); 
-                $(".videowrap iframe").attr("src", vimeo + "?autoplay=1");
-                window.location.hash = problemName.replace(/\s+/g, '');
-
                 $(".videowrap").hide();
                 setTimeout(function() {
                     $elt.on("click", function() {
+                        window.location.hash = problemName.replace(/\s+/g, '');
+                        var vimeo = $elt.find("a").attr("href"); 
+                        $(".videowrap iframe").attr("src", vimeo + "?autoplay=1");
                         $(".videowrap").show();        
                     });
                 }, 300);
