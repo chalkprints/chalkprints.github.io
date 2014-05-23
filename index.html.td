@@ -56,6 +56,7 @@
       ga('send', 'pageview');
 
     </script>
+    
 </head>
 
 <body class="stopanim">
@@ -69,17 +70,18 @@
         <div class="content container">
             <div class="row">
                 <div class="columns sixteen clearfix">
-                    <div class="banner floatleft white textshadow pad20">
-                        <h7 class="bold">Camp4 Bouldering</h7>
-                        <p class="muted75 semibold subtitle">Yosemite Valley, CA, USA</p>
+                    <div class="banner floatleft white textshadow pad30">
+                        <h6 class="bold">Camp 4</h6>
+                        <h7 class="muted75 bold">Classic Bouldering</h7>
+                        <p class="muted50 semibold subtitle">Yosemite National Park, CA, USA</p>
                     </div>
-                    <div class="logo absolute pad20"><h1>Chalkprints</h1></div>
+                    <div class="logo absolute pad30"><h1>chalkprints</h1></div>
                 </div>
             </div>
             <div class="row">
                 <div class="columns sixteen relative">
                     <div class="map container center">
-                        <img src="assets/images/map-camp4.svg" width="100%" alt="Camp4 Map"/>
+                        <img src="assets/images/map-camp4.png" width="100%" alt="Camp4 Map"/>
                         <span class="marker"><label></label></span>
                     </div>
                 </div>
@@ -98,115 +100,115 @@
                                     <label class="block bold">Midnight Lightning</label>
                                     <img class="block" src="assets/images/thumbs/MidnightLighting.png" />
                                     <span class="block absolute pad-10 white">v8</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96116219"></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p2" data-name="Robbins Problem" data-x="76" data-y="41">
                                     <label class="block bold">Robbins Problem</label>
                                     <img class="block" src="assets/images/thumbs/RobbinsProblem.png" />
-                                    <span class="block absolute pad-10 white">v4</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96117238"></a>
+                                    <span class="block absolute pad-10 white">v6</span>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p3" data-name="Bates Problem" data-x="68" data-y="43">
                                     <label class="block bold">Bates Problem</label>
                                     <img class="block" src="assets/images/thumbs/BatesProblem.png" />
-                                    <span class="block absolute pad-10 white">v4</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96107361"></a>
+                                    <span class="block absolute pad-10 white">v6</span>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>                                
                                 </td>
                                 <td class="thumb" data-problem-id="p4" data-name="The Marco Traverse" data-x="67" data-y="34">
                                     <label class="block bold">TheMarcoTraverse</label>
                                     <img class="block" src="assets/images/thumbs/TheMarcoTraverse.png" />
-                                    <span class="block absolute pad-10 white">v2</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96115765"></a>
+                                    <span class="block absolute pad-10 white">v4</span>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p5" data-name="Initial Friction" data-x="66" data-y="31">
                                     <label class="block bold">Initial Friction</label>
                                     <img class="block" src="assets/images/thumbs/InitialFriction.png" />
-                                    <span class="block absolute pad-10 white">v2</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96114023"></a>
-                                </td>
+                                    <span class="block absolute pad-10 white">v4</span>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
+                               </td>
                                 <td class="thumb" data-problem-id="p6" data-name="Cocaine Corner" data-x="65" data-y="25">
                                     <label class="block bold">Cocaine Corner</label>
                                     <img class="block" src="assets/images/thumbs/CocaineCorner.png" />
                                     <span class="block absolute pad-10 white">v4</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96112501"></a>
-                                </td>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
+                               </td>
                                 <td class="thumb" data-problem-id="p7" data-name="Father of the Egg" data-x="59" data-y="28">
                                     <label class="block bold">Father of the Egg</label>
                                     <img class="block" src="assets/images/thumbs/FaderOfTheEgg.png" />
                                     <span class="block absolute pad-10 white">v6</span>
-                                    <a class="hidden" href=""></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p8" data-name="Tendons Give" data-x="48" data-y="28">
                                     <label class="block bold">Tendons Give</label>
                                     <img class="block" src="assets/images/thumbs/TendonsGive.png" />
                                     <span class="block absolute pad-10 white">v4</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96121271"></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p9" data-name="The Titanic" data-x="14" data-y="24">
                                     <label class="block bold">The Titanic</label>
                                     <img class="block" src="assets/images/thumbs/TheTitanic.png" />
-                                    <span class="block absolute pad-10 white">v5</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96122018"></a>
+                                    <span class="block absolute pad-10 white">v6</span>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p10" data-name="Battle of the Bulge" data-x="12" data-y="30">
                                     <label class="block bold">Battle of the Bulge</label>
                                     <img class="block" src="assets/images/thumbs/BattleOfTheBulge.png" />
                                     <span class="block absolute pad-10 white">v6</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96109317"></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p11" data-name="Vers Werner" data-x="79" data-y="32">
                                     <label class="block bold">Vers Werner</label>
                                     <img class="block" src="assets/images/thumbs/VersWerner.png" />
-                                    <span class="block absolute pad-10 white">v2</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96122588"></a>
+                                    <span class="block absolute pad-10 white">v4</span>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p12" data-name="Blue Suede Shoes" data-x="80" data-y="25">
                                     <label class="block bold">Blue Suede Shoes</label>
                                     <img class="block" src="assets/images/thumbs/BlueShoes.png" />
                                     <span class="block absolute pad-10 white">v4</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96110759"></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p13" data-name="Shiver Me Timbers" data-x="80" data-y="18">
                                     <label class="block bold">Shiver Me Timbers</label>
                                     <img class="block" src="assets/images/thumbs/ShiverMeTimbers.png" />
                                     <span class="block absolute pad-10 white">v5</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96118325"></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p14" data-name="Bruce Lee" data-x="85" data-y="5">
                                     <label class="block bold">Bruce Lee</label>
                                     <img class="block" src="assets/images/thumbs/BruceLee.png" />
                                     <span class="block absolute pad-10 white">v8</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96111442"></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p15" data-name="King Cobra" data-x="99" data-y="17">
                                     <label class="block bold">King Cobra</label>
                                     <img class="block" src="assets/images/thumbs/KingCobra.png" />
                                     <span class="block absolute pad-10 white">v8</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96114749"></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p16" data-name="Ament Arete" data-x="95" data-y="28">
                                     <label class="block bold">Ament Arete</label>
                                     <img class="block" src="assets/images/thumbs/AmentArete.png" />
-                                    <span class="block absolute pad-10 white">v5</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96104652"></a>
+                                    <span class="block absolute pad-10 white">v6</span>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p17" data-name="Dynamo" data-x="136" data-y="15">
                                     <label class="block bold">Dynamo</label>
                                     <img class="block" src="assets/images/thumbs/Dynamo.png" />
                                     <span class="block absolute pad-10 white">v5</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/95917154"></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p18" data-name="Barchar Crack" data-x="128" data-y="27">
                                     <label class="block bold">Bachar Crack</label>
                                     <img class="block" src="assets/images/thumbs/BacharCracker.png" />
                                     <span class="block absolute pad-10 white">v4</span>
-                                    <a class="hidden" href="//player.vimeo.com/video/96105395"></a>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                                 <td class="thumb" data-problem-id="p19" data-name="The Force" data-x="148" data-y="39">
                                     <label class="block bold">The Force</label>
                                     <img class="block" src="assets/images/thumbs/TheForce.png" />
-                                    <span class="block absolute pad-10 white">v10</span>
-                                    <a class="hidden" href=""></a>
+                                    <span class="block absolute pad-10 white">v11</span>
+                                    <a class="hidden" href="http://player.vimeo.com/video/96106017"></a>
                                 </td>
                             </tr>
                         </table>
@@ -215,11 +217,6 @@
             </div>
         </div>
         
-        <!-- fluid width video player -->
-        <div class="videowrap container content">
-            <iframe src="" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div> 
-
     </div>
 
 </body>
@@ -260,10 +257,13 @@
                 
                 // if thumbnail not visible, scroll to it
                 if (!$targetthumb.isOnScreen()) $(".thumbs").scrollTo($targetthumb, 500);       
+
+                // simulate a hover
+                $(".thumbcontainer .thumb").removeClass("thumbhover");
+                $targetthumb.addClass("thumbhover");
  
                 // force event action
-                $targetthumb.trigger("mouseenter");
-                
+                $targetthumb.trigger("mouseenter");              
             });
             
         });
@@ -272,13 +272,8 @@
         // hovering on a thumbnail image should show the map pointer and label
         $(".thumb").on("mouseenter", function(e) {
 
-            $elt = $(e.currentTarget);
-
-            // simulate a hover
-            $(".thumbcontainer .thumb").removeClass("thumbhover");
-            $elt.addClass("thumbhover");
-
             // get current thumb(i) info...         
+            $elt = $(e.currentTarget);
             var problemId = $elt.data("problem-id");
             var problemName = $elt.data("name");
             var xPos = ($elt.data("x")/1.6)-3.4+"%";
@@ -289,33 +284,21 @@
             $(".map .marker").css({ top : yPos, left : xPos });
             $(".map .marker").fadeIn(250);
 
-            // if not already the selected thumb, mark as selected (adds play button) 
-            // and activate video link
-            if (!($elt.find('.selected').length > 0)) {
-                $(".thumbcontainer .thumb .selected").remove();
-                $elt.append("<p class='selected'></p>");
-
-                var vimeo = $elt.find("a").attr("href"); 
-                $(".videowrap iframe").attr("src", vimeo + "?autoplay=1");
+            // activate video link
+            $(".thumbcontainer .thumb .selected").remove();
+            $elt.append("<p class='selected'></p>");
+            $elt.on("click", function() {
+                // TODO: show / hide the iframe container
                 // TODO: update the browser URL
-
-                $(".videowrap").hide();
-                setTimeout(function() {
-                    $elt.on("click", function() {
-                        $(".videowrap").show();        
-                    });
-                }, 300);
-            }
+                // window.location = $elt.find("a").attr("href"); 
+            });
         });
-        
-        // deactivative any selected marker or thumb
+       
         $(".map img").on("mouseenter", function(e) {
             $(".map .marker").fadeOut(500);
-            $(".thumbcontainer .thumb").removeClass("thumbhover");
-            $(".thumbcontainer .thumb .selected").remove();
         });
 
-        // Highlight first climb
+        // Highlight the first climb
         $(".thumbcontainer td:nth-child(1)").mouseenter();
     });
     
