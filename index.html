@@ -373,7 +373,7 @@
                 $targetthumb = $($(".thumbcontainer").find("[data-uid='" + matchId + "']")[0]);  
  
                 // if thumbnail not visible, scroll to it
-                if (!$elt.isOnScreen()) $(".thumbs").scrollTo($elt, 500); 
+                if (!$targetthumb.isOnScreen()) $(".thumbs").scrollTo($targetthumb, 500); 
                 
                 // force event action
                 $targetthumb.trigger("mouseenter");
