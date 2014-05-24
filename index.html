@@ -385,10 +385,10 @@
                 $play = $("<a />");
 				$play.addClass("playbtn");
 				$elt.find(".image").append($play)
-				$play.fadeIn(1000);
+				$play.fadeIn(300);
 				
 				// set up active state and video link
-				$.doTimeout("setactive", 200, function() {
+				$.doTimeout("setactive", 300, function() {
                     $elt.addClass("active");
                     $play.attr("href", "#" + problemUID);
 				});
