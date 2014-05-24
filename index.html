@@ -372,9 +372,11 @@
                 // find the thumb with the same data ID
                 $targetthumb = $($(".thumbcontainer").find("[data-uid='" + matchId + "']")[0]);  
  
+                // if thumbnail not visible, scroll to it
+                if (!$elt.isOnScreen()) $(".thumbs").scrollTo($elt, 500); 
+                
                 // force event action
                 $targetthumb.trigger("mouseenter");
-                
             });
             
         });
@@ -384,9 +386,6 @@
         $(".thumb").on("mouseenter", function(e) {
 
             $elt = $(e.currentTarget);
-
-            // if thumbnail not visible, scroll to it (needed cos we simulate mouseenter often)
-            if (!$elt.isOnScreen()) $(".thumbs").scrollTo($elt, 500);   
 
             // simulate a hover
             $(".thumb").removeClass("thumbhover");
@@ -414,7 +413,7 @@
                 $play = $("<a />");
 				$play.addClass("playbtn");
 				$elt.find(".image").append($play)
-				$play.fadeIn(300);
+				$play.fadeIn(1000);
 				
 				// set up active state and video link
 				$.doTimeout("setactive", 300, function() {
