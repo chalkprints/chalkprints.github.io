@@ -432,14 +432,16 @@
 		$(".videowrap .close").on("click", closeVideo);
 		$(".map").on("click", closeVideo);
 
-        // late load thumbnail images
+        // handle the URL hash the page may have loaded with
+        $(window).trigger("hashchange");
+    });
+
+    // late load thumbnail images
+    $(window).load(function() {
         $("img[data-src]").each(function(i, elt) {
             $elt = $(elt);
             $elt.attr("src", $elt.data("src"));
         });
-
-        // handle the URL hash the page may have loaded with
-        $(window).trigger("hashchange");
     });
 
     // Use URL hash to maintain bookmarkable state (needed for back button users on android/desktop)
