@@ -451,8 +451,15 @@
             $(".videowrap .title").text(problemName);
             $(".videowrap").fadeIn(200);
         } else {
-            // if hash is invalid or non-existant, use the 1st climb
+            // if hash is invalid or non-existant, assume initialization sequence
+            // set to a fixed climb
             $(".thumbcontainer td:nth-child(1)").mouseenter();
+            // then scroll to another climb to show the user what's possible
+            $.doTimeout("setactive", 1000, function() {
+                var randClimb = 8;
+                $(".thumbs").scrollTo($(".thumbcontainer td:nth-child(" + randClimb + ")"), 1000); 
+                $(".thumbcontainer td:nth-child(" + (randClimb + 1) + ")").mouseenter();
+            });
         }
     });
     
