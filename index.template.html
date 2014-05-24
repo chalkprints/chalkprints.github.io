@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<!-- build:template -->
+<%= message %>
+<!-- /build -->
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Yosemite Camp 4 - Climbing and Bouldering Video Guide - Chalkprints</title>
+    <meta name="description" content="High quality video guides for the classic climbing and bouldering routes in the vicinity of Camp 4, Yosemite National Park, California" />
+    <meta name="author" content="Chalkprints" />
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- CSS
+    ================================================== -->
+    <!-- build:css assets/styles/combined.min.css -->
+    <link rel="stylesheet" href="assets/styles/reset.css" type="text/css" />
+    <link rel="stylesheet" href="assets/styles/monkeygrid.css" type="text/css" />
+    <link rel="stylesheet" href="assets/styles/monkeybase.css" type="text/css" />
+    <link rel="stylesheet" href="assets/styles/camp4.css" type="text/css" />
+    <!-- /build -->
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png" />
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- build:js assets/scripts/combined.min.js -->
+    <script language="javascript" src="assets/scripts/jquery.js" type="text/javascript"></script>
+    <script language="javascript" src="assets/scripts/jquery.dotimeout.js" type="text/javascript"></script>
+    <script language="javascript" src="assets/scripts/jquery.scrollto.js" type="text/javascript"></script>
+    <script language="javascript" src="assets/scripts/jquery.localscroll.js" type="text/javascript"></script>
+    <script language="javascript" src="assets/scripts/utils.js" type="text/javascript"></script>
+    <!-- /build -->
+
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51130758-1', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body class="stopanim">
+
+    <!-- yosemite landscape container -->
+    <div class="fullmaskback"></div>
+    
+    <div class="wrapper anim container clearfix">
+        
+        <!-- main area -->
+        <div class="content container">
+            <div class="row">
+                <div class="columns sixteen clearfix">
+                    <!-- banner and logo -->
+                    <div class="banner floatleft white textshadow pad20">
+                        <h7 class="bold">Camp4 Bouldering</h7>
+                        <p class="muted75 semibold subtitle">Yosemite Valley, CA, USA</p>
+                    </div>
+                    <div class="logo absolute pad20"><h1>Chalkprints</h1></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="columns sixteen relative">
+                    <!-- responsive sized map -->
+                    <div class="map container center">
+                        <img src="assets/images/map-camp4.svg" width="100%" alt="Camp4 Map"/>
+                        <span class="marker"><label></label></span>
+                    </div>
+                    <!-- fluid size video player -->
+                    <div class="videowrap container content">
+                    	<span class="title"></span>
+                    	<a class="close">x</a>
+                        <iframe src="" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <!-- fixed scroller for thumbs -->
+        <div class="thumbs container fixed w100">
+            <div class="row">
+                <div class="columns sixteen">
+                    <div class="thumbcontainer">
+                        <table>
+                            <col />
+                            <tr>
+                                <td class="thumb" data-uid="MidnightLightning" data-x="72" data-y="50">
+                                    <div class="container">
+                                        <label class="block bold">Midnight Lightning</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/MidnightLighting.png" />
+                                            <span class="block absolute pad-5 white">v8</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96116219"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="RobbinsProblem" data-x="77" data-y="47">
+                                    <div class="container">
+                                        <label class="block bold">Robbins Problem</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/RobbinsProblem.png" />
+                                            <span class="block absolute pad-5 white">v4</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96117238"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="BigColumbiaDescend" data-x="77" data-y="43">
+                                    <div class="container">
+                                        <label class="block bold">Big Columbia Descend</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/BigColumbiaDescend.png" />
+                                            <span class="block absolute pad-5 white">v4</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96109936"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="BatesProblem" data-x="73" data-y="40">
+                                    <div class="container">
+                                        <label class="block bold">Bates Problem</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/BatesProblem.png" />
+                                            <span class="block absolute pad-5 white">v4</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96107361"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="TheMarcoTraverse" data-x="67" data-y="35">
+                                    <div class="container">
+                                        <label class="block bold">The Marco Traverse</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/TheMarcoTraverse.png" />
+                                            <span class="block absolute pad-5 white">v2</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96115765"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="InitialFriction" data-x="62" data-y="31">
+                                    <div class="container">
+                                        <label class="block bold">Initial Friction</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/InitialFriction.png" />
+                                            <span class="block absolute pad-5 white">v2</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96114023"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="CocaineCorner" data-x="65" data-y="28">
+                                    <div class="container">
+                                        <label class="block bold">Cocaine Corner</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/CocaineCorner.png" />
+                                            <span class="block absolute pad-5 white">v4</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96112501"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="FatheroftheEgg" data-x="57" data-y="31">
+                                    <div class="container">
+                                        <label class="block bold">Father of the Egg</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/FaderOfTheEgg.png" />
+                                            <span class="block absolute pad-5 white">v6</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96113388"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="TendonsGive" data-x="47" data-y="31">
+                                    <div class="container">
+                                        <label class="block bold">Tendons Give</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/TendonsGive.png" />
+                                            <span class="block absolute pad-5 white">v4</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96121271"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="TendonsGiveExtended" data-x="47" data-y="28">
+                                    <div class="container">
+                                        <label class="block bold">Tendons Give Extended</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/TendonsGiveExtended.png" />
+                                            <span class="block absolute pad-5 white">v6</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96120335"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="TheTitanic" data-x="16" data-y="29">
+                                    <div class="container">
+                                        <label class="block bold">The Titanic</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/TheTitanic.png" />
+                                            <span class="block absolute pad-5 white">v5</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96122018"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="BattleoftheBulge" data-x="11" data-y="30">
+                                    <div class="container">
+                                        <label class="block bold">Battle of the Bulge</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/BattleOfTheBulge.png" />
+                                            <span class="block absolute pad-5 white">v6</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96109317"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="VersWerner" data-x="75" data-y="32">
+                                    <div class="container">
+                                        <label class="block bold">Vers Werner</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/VersWerner.png" />
+                                            <span class="block absolute pad-5 white">v2</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96122588"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="BlueSuedeShoes" data-x="80" data-y="31">
+                                    <div class="container">
+                                        <label class="block bold">Blue Suede Shoes</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/BlueShoes.png" />
+                                            <span class="block absolute pad-5 white">v4</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96110759"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="ShiverMeTimbers" data-x="79" data-y="19">
+                                    <div class="container">
+                                        <label class="block bold">Shiver Me Timbers</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/ShiverMeTimbers.png" />
+                                            <span class="block absolute pad-5 white">v5</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96118325"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="BruceLee" data-x="86" data-y="3">
+                                    <div class="container">
+                                        <label class="block bold">Bruce Lee</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/BruceLee.png" />
+                                            <span class="block absolute pad-5 white">v8</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96111442"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="KingCobra" data-x="97" data-y="17">
+                                    <div class="container">
+                                        <label class="block bold">King Cobra</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/KingCobra.png" />
+                                            <span class="block absolute pad-5 white">v8</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96114749"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="AmentArete" data-x="93" data-y="33">
+                                    <div class="container">
+                                        <label class="block bold">Ament Arete</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/AmentArete.png" />
+                                            <span class="block absolute pad-5 white">v5</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96104652"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="Dynamo" data-x="134" data-y="16">
+                                    <div class="container">
+                                        <label class="block bold">Dynamo</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/Dynamo.png" />
+                                            <span class="block absolute pad-5 white">v5</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/95917154"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="BarcharCracker" data-x="126" data-y="21">
+                                    <div class="container">
+                                        <label class="block bold">Bachar Cracker</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/BacharCracker.png" />
+                                            <span class="block absolute pad-5 white">v4</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96105395"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="TheForce" data-x="140" data-y="41">
+                                    <div class="container">
+                                        <label class="block bold">The Force</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/TheForce.png" />
+                                            <span class="block absolute pad-5 white">v10</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96226682"></a>
+                                    </div>
+                                </td>
+                                <td class="thumb" data-uid="TheFarce" data-x="143" data-y="40">
+                                    <div class="container">
+                                        <label class="block bold">The Farce</label>
+                                        <div class="image">
+                                            <img class="block" data-src="assets/images/thumbs/TheFarce.png" />
+                                            <span class="block absolute pad-5 white">v9</span>
+                                        </div>
+                                        <a class="videolink hidden" href="http://player.vimeo.com/video/96227521"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+<script>
+
+    $(document).ready(function() {
+        // set up main content container size and maintain
+        $(window).resize(sizeContent);
+        sizeContent();
+        
+        // set up map markers based on the thumbs
+        // hovering on placeholder markers should show the map pointer label
+        $(".thumb").each(function(i, elt) {
+            
+            // get current thumb(i) info...
+            $elt = $(elt);
+            var problemUID = $elt.data("uid");
+            var xPos = ($elt.data("x")/1.6)-3.4+"%";
+            var yPos = ($elt.data("y")-3.4)+"%";
+            
+            // create a placeholder map marker for each thumb
+            var $mapmarker = $("<span />");
+            $mapmarker.attr("id", problemUID);
+            $mapmarker.attr("class", "targetmarker");
+            $mapmarker.css({ top : yPos, left : xPos });
+            $(".map").append($mapmarker);
+            
+            // set up mouse events to show the main marker for each placeholder
+            $mapmarker.on("mouseenter", function(e) {
+                
+                // get the persisted id to match
+                $elt = $(e.currentTarget);
+                var matchId = $elt.attr("id");
+                
+                // find the thumb with the same data ID
+                $targetthumb = $($(".thumbcontainer").find("[data-uid='" + matchId + "']")[0]);  
+ 
+                // if thumbnail not visible, scroll to it
+                if (!$targetthumb.isOnScreen()) $(".thumbs").scrollTo($targetthumb, 500); 
+                
+                // force event action
+                $targetthumb.trigger("mouseenter");
+            });
+            
+        });
+        
+        // set up hovers for thumbs to show markers + play button for video
+        // hovering on a thumbnail image should show the map pointer and label
+        $(".thumb").on("mouseenter", function(e) {
+
+            $elt = $(e.currentTarget);
+
+            // simulate a hover
+            $(".thumb").removeClass("thumbhover");
+            $elt.addClass("thumbhover");
+
+            // get current thumb(i) info...         
+            var problemUID = $elt.data("uid");
+            var problemName = $elt.find("label").text();
+            var xPos = ($elt.data("x")/1.6)-3.4+"%";
+            var yPos = ($elt.data("y")-3.4)+"%";
+            
+            // name and position the map pointer
+            $(".map .marker label").text(problemName);
+            $(".map .marker").css({ top : yPos, left : xPos });
+            $(".map .marker").fadeIn(250);
+
+            // if not already the selected thumb, mark as selected and activate video link
+            if (!($elt.hasClass("active"))) {
+
+                // remove play button & active state from previous thumb
+                $(".playbtn").remove();
+                $(".thumb").removeClass("active");
+				
+				// add play button
+                $play = $("<a />");
+				$play.addClass("playbtn");
+				$elt.find(".image").append($play)
+				$play.fadeIn(1000);
+				
+				// set up active state and video link
+				$.doTimeout("setactive", 300, function() {
+                    $elt.addClass("active");
+                    $play.attr("href", "#" + problemUID);
+				});
+            }
+        });
+        
+		// close video link
+		$(".videowrap .close").on("click", closeVideo);
+		$(".map").on("click", closeVideo);
+
+        // late load thumbnail images
+        $("img[data-src]").each(function(i, elt) {
+            $elt = $(elt);
+            $elt.attr("src", $elt.data("src"));
+        });
+
+        // handle the URL hash the page may have loaded with
+        $(window).trigger("hashchange");
+    });
+
+    // Use URL hash to maintain bookmarkable state (needed for back button users on android/desktop)
+    // If the URL hash is a valid climb, play a video
+    $(window).bind("hashchange", function(e) {
+        var climbName = window.location.hash.substring(1).replace(/\s+/g, '');
+        var $elt = $(".thumbcontainer [data-uid='" + climbName + "']");
+
+        if ($elt.length > 0) {
+            var problemName = $elt.find("label").text();
+            var vimeo = $elt.find("a.videolink").attr("href"); 
+
+            $(".videowrap iframe").attr("src", vimeo + "?autoplay=1");
+            $(".videowrap .title").text(problemName);
+            $(".videowrap").fadeIn(200);
+        } else {
+            // if hash is invalid or non-existant, assume initialization sequence
+            // set to a fixed climb
+            $(".thumbcontainer td:nth-child(1)").mouseenter();
+            // then scroll to another climb to show the user what's possible
+            $.doTimeout("setactive", 1000, function() {
+                var randClimb = 8;
+                $(".thumbs").scrollTo($(".thumbcontainer td:nth-child(" + randClimb + ")"), 1000); 
+                $(".thumbcontainer td:nth-child(" + (randClimb + 1) + ")").mouseenter();
+            });
+        }
+    });
+    
+    // size map container and thumb container for optimal heights
+    var sizeContent = function() {
+        bh = $("body").height();
+		hd = 180;
+		if (bh < 320) {
+			hd = 90;
+		} else if ((bh >= 320) && (bh < 600)) {
+			hd = 130;
+		} else if ((bh >= 600) && (bh < 680)) {
+			hd = 155;
+		} else if (bh > 840) {
+			hd = 220;
+		} else {
+			hd = 180;
+		}
+        $(".content").css({ height : bh - hd });
+        $(".thumbs").css({ height : hd });
+        $(".videowrap").css({ bottom : hd });
+    };
+	
+	var closeVideo = function() {
+		$(".videowrap iframe").attr("src", "");
+		$(".videowrap").fadeOut(200);
+	};
+
+</script>
+
+</html>
