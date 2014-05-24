@@ -27,9 +27,9 @@ body {
 
 .logo { 
 	right: 0;
-	width: 100px; height: 100px;
+	width: 105px; height: 100px;
 	background: transparent url(../images/logo-small.png) no-repeat 20px 20px; 
-	background-size: 60px auto;
+	background-size: 70px auto;
 	opacity: 0.5;
 	cursor: pointer;
 }
