@@ -1,10 +1,17 @@
 # Yosemite Camp 4 Bouldering Video Guide
 
+## Hosting
 
+Via Github Pages, at www.camp4bouldering.com
 
-## TODO
+The `master` branch is automatically made live.
 
-1. Google Webmaster tools to get all the SEO 101 stuff down
+## Deployment
 
-2. Videos
+We use `grunt` to productionize the codebase:
+1. Concat and minify the CSS and JS
+- Create a new `index.html`
 
+## Travis CI
+
+WIP. Still figuring this out
