@@ -90,9 +90,14 @@ module.exports = function (grunt) {
     },
 
     gitpush: {
-      buildfiles: {
+      deploy: {
         options: {
           branch: 'deploy'
+        }
+      },
+      master: {
+        options: {
+          branch: 'master'
         }
       }
     },
@@ -115,8 +120,10 @@ module.exports = function (grunt) {
     ['connect:server', 'casperjs']);
 
   grunt.registerTask('push', 'commit and push buildfiles to origin', 
-    ['gitcommit:buildfiles', 'gitpush:buildfiles']);
+    ['gitcommit:buildfiles', 'gitpush:deploy', 'gitpush:master']);
 
+  grunt.registerTask('default', ['build', 'test', 'push']);
+  
   grunt.registerTask('server', 'serve website on localhost:8080; ctrl-C to stop', 
     'connect:server:keepalive');
 
