@@ -14,3 +14,16 @@ before_install:
 
 before_script:
   - grunt build
+
+# script: grunt test
+
+after_success:
+  - git config --global user.email "travis-ci@donotreply.com"
+  - git config --global user.name "Travis-CI"
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - grunt push
+
+env:
+  global:
+    secure: "bVaY7NZEbY4zGdZkSwOCPImxARnlzaq0A4j1LWVQ0vdSki1uJgk6qLDJEf+T/9yzG5mGxYe0zMCnlp2SRgxXDsHMbrwqIOYPfoqos3GhL2P7AWAd8e5dhwq69nW/z2tgzcFS+6LzskIj3yTqc6rU/6kEpKPpAcmx/+kzRWpBf5U="
