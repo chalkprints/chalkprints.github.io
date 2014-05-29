@@ -6,3 +6,10 @@ node_js:
 branches:
   only:
     - deploy
+
+before_script:
+  - node test/server.js . 8080 &
+  - sleep 5
+
+script:
+  - phantomjs test/basictest.js localhost:8080
