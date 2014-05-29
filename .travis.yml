@@ -7,9 +7,10 @@ branches:
   only:
     - deploy
 
-before_script:
-  - node test/server.js . 8080 &
-  - sleep 5
+before_install: 
+  - npm install -g grunt-cli
+  - npm install -g casperjs
+  - phantomjs --version; casperjs --version
 
-script:
-  - phantomjs test/basictest.js localhost:8080
+before_script:
+  - grunt build
