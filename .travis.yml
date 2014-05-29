@@ -1,3 +1,8 @@
 language: node_js
 node_js:
   - "0.10"
+
+# only build the deploy branch
+branches:
+  only:
+    - deploy
