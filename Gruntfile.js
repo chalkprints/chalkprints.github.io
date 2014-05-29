@@ -64,6 +64,20 @@ module.exports = function (grunt) {
         }
       }
     },
+
+    connect: {
+      server: {
+        options: {
+          port: 8080,
+          base: '.'
+        }
+      }
+    },
+
+    casperjs: {
+      files: ['./tests/*.js']
+    },
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -71,6 +85,16 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-processhtml');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-casperjs-plugin');
 
-  grunt.registerTask('default', ['clean', 'concat:css', 'cssmin:css', 'concat:js', 'uglify:js', 'processhtml:dist']);
+  grunt.registerTask('build', 'concat and minify css & js', 
+    ['clean', 'concat:css', 'cssmin:css', 'concat:js', 'uglify:js', 'processhtml:dist']);
+
+  grunt.registerTask('test', 'launch server and run tests', 
+    ['connect:server', 'casperjs']);
+
+  grunt.registerTask('server', 'serve website on localhost:8080; ctrl-C to stop', 
+    'connect:server:keepalive');
+
 };
